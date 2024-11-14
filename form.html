@@ -1,0 +1,36 @@
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="styles2.css">
+<title>Contact</title>
+</head>
+<div class="titl">
+	<div class="back">
+		<button onclick="history.back()">Go Back</button>
+	</div>
+<center><h1>Contact</h1></center>
+</div>
+<body>
+	<a id="contact">
+	<center><form action="https://api.web3forms.com/submit" method="POST">
+
+			<!-- Replace with your Access Key -->
+			<input type="hidden" name="access_key" value="5519646d-33c0-495d-9f98-3442a95dde78">
+
+			<!-- Form Inputs. Each input must have a name="" attribute -->
+			Name: <input type="text" name="name" required autocomplete=off>
+			Email: <input type="email" name="email" required autocomplete=off>
+			Message: <textarea name="message" required autocomplete=off></textarea>
+
+			<!-- Honeypot Spam Protection -->
+			<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+			<!-- Custom Confirmation / Success Page -->
+			<input type="hidden" name="redirect" value="https://thesavagedeveloperlogs.co.uk#About_Me"> 
+			<button type="submit">Submit Form</button>
+			<form onsubmit="return validate(this);">
+	</form></center>
+	</body>
+</html> 
+
